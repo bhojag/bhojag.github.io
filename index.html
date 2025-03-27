@@ -1,21 +1,30 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Image to Screen</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
         }
         img {
-            width: 100%;
-            height: auto;
-            display: block;
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <img src="invitation.png" alt="Full Screen Image">
+    <img src="invitation.jpg" alt="Fit to Screen Image">
 </body>
 </html>
+
